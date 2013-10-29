@@ -28,8 +28,8 @@
                     National Certification #: <?php if (!empty($fields['value_6']->raw)) print $fields['value_6']->raw . "</br>"; else print ' No</br>'; ?>
                     Ph: <?php print $fields['value_7']->raw; ?> </br>
                     Fax: <?php print $fields['value_2']->raw; ?></br>
-                    <?php print $fields['mail']->content; ?></br>
-                    <div class="website-link"><?php if(!empty($fields['value_9']->raw)) print '<a href="' . $fields['value_9']->raw .'" target="_blank">Company Website</a>';?></div>
+                    <a href="mailto:<?php print $fields['mail']->raw; ?>" class="inspector-email"><?php print $fields['mail']->raw; ?></a></br>
+                    <div class="website-link"><?php if(!empty($fields['value_9']->raw)) print '<a href="' . $fields['value_9']->raw .'" target="_blank" class="btn website-btn">Company Website</a>';?></div>
                 </p>
               </div>
             </div>

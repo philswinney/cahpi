@@ -148,3 +148,11 @@
   box-sizing: border-box;
   float: left;
 }
+
+.nav-collapse ul.sf-menu > li {
+    width: 175px;
+}
+
+.nav-collapse ul.sf-menu > li a {
+    font-size: .75em;
+}

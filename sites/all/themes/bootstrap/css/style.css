@@ -823,6 +823,7 @@ time.date-1 {
     font-weight: bold;
     color: #fff;
     line-height: 1em;
+    font-size: 1em;
 }
 
 .insp-name {
@@ -832,6 +833,7 @@ time.date-1 {
 .website-link {
     display: block;
     height: 1em;
+    padding: 0.5em 0;
 }
 
 .list-services li .caption {
@@ -840,13 +842,16 @@ time.date-1 {
 }
 .list-services li .caption a {
   color: #ffffff;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-family: Arial, helvetica, sans-serif;
   line-height: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', sans-serif;
 }
+
+.list-services li .caption a.website-btn {
+    color: #666666;
+}
+
 .list-services li .caption p {
   line-height: 16px;
   font-size: 0.85em;

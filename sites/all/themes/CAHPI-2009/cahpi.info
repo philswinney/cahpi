@@ -1,0 +1,23 @@
+; $Id: cahpi.info,v 1.0 2009/05/11 23:27:32 goba Exp $
+name = cahpi
+description = Custom Theme for Atlantic Canadian Association of Home Inspectors
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/default.css
+stylesheets[print][] = print.css
+regions[topmenu] = Top Menu
+regions[submenu] = Sub Menu
+regions[mainmenu] = Main Menu
+regions[homeContentLeft] = Home Page Content
+regions[homeContentRight] = Home Page Content Right
+regions[content] = Main Content Area
+regions[extranet_menu] = Extranet Menu
+regions[admin_nav] = Administration Navigation
+ 
+
+; Information added by drupal.org packaging script on 2009-02-25
+version = "6.10"
+project = "drupal"
+datestamp = "1235596218"
+

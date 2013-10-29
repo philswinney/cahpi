@@ -1,0 +1,25 @@
+body {
+  /* Center layout */
+  text-align: center;
+
+}
+
+div#main_menu ul li.last a {
+  padding-left: 37px;
+  padding-right: 38px;
+}
+
+div#main_menu ul {
+  width: 923px;
+}
+
+div#main_menu {
+  width: 923px;
+}
+
+div#content_wrapper {
+  right: 2px;
+}
+
+
+

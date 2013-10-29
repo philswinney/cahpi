@@ -35,13 +35,6 @@
 <div id="content">
   <div class="container">
     <div class="row policy">
-      <article class="span4 pull-right">
-        <?php if (!empty($page['sidebar_first'])): ?>
-          <aside class="span3" role="complementary">
-            <?php print render($page['sidebar_first']); ?>
-          </aside>  <!-- /#sidebar-first -->
-        <?php endif; ?>        
-      </article>
       <article class="span8">
       <?php if (!empty($title)): ?>
         <div class="line-wrapper">
@@ -65,6 +58,13 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       </article>
+        <article class="span4">
+            <?php if (!empty($page['sidebar_first'])): ?>
+                <aside class="span3" role="complementary">
+                    <?php print render($page['sidebar_first']); ?>
+                </aside>  <!-- /#sidebar-first -->
+            <?php endif; ?>
+        </article>
     </div>
   </div>
 </div>

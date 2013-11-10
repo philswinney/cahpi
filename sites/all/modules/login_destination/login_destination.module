@@ -455,6 +455,7 @@ function _login_destination_match_rule($rule, $trigger = '', $current = NULL) {
  * A helper function to evaluate destination path.
  */
 function _login_destination_evaluate_rule($rule, $trigger = '') {
+  Global $user;
   if ($rule->destination_type == LOGIN_DESTINATION_STATIC) {
     // take only 1st line
     if (preg_match("!^(.*?)$!", $rule->destination, $matches) === 1 ) {
@@ -476,6 +477,12 @@ function _login_destination_evaluate_rule($rule, $trigger = '') {
         $destination = drupal_parse_url($path);
         $options = array();
         $options['query'] = $destination['query'];
+        //Added a check for a <user-id> tag so it can redirect to a specific User page
+            if(strpos($destination['path'], '<user-id>') > 0){
+                if(isset($user->uid) && !empty($user->uid))
+                    $destination['path'] = preg_replace('/<user-id>/',$user->uid,$destination['path']);
+            }
+
         $options['fragment'] = $destination['fragment'];
 
         // drupal_goto cares about <front>

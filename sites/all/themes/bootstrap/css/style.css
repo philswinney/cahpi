@@ -1213,6 +1213,20 @@ footer {
   color: #58595b;
 }
 /*--- footer end ------*/
+
+/*----- Member Extranet----------*/
+
+#edit-membership-info .form-type-select{
+    display: inline;
+    float: left;
+}
+
+#edit-membership-info p {
+    display: block;
+    clear: both;
+}
+
+
 @media only screen and (min-width: 1200px) {
 
   .listheaderbtn3, .listheaderbtn2{

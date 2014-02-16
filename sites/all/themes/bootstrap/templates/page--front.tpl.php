@@ -33,7 +33,7 @@
                   <li><img src="/sites/default/files/banner/cam_roof_damage2.png">
                         <div id="bx-banner">
                             <h3>Roof Damage</h3>
-                            <p>Leakage from damage shingles</p>
+                            <p>Leakage from damaged shingles</p>
                         </div>
                   </li>
                   <li><img src="/sites/default/files/banner/cam_poor_ventilation.png">

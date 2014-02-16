@@ -27,9 +27,13 @@
                     Certification: <?php print $fields['value']->raw; ?><br/>
                     National Certification #: <?php if (!empty($fields['value_6']->raw)) print $fields['value_6']->raw . "</br>"; else print ' No</br>'; ?>
                     Ph: <?php print $fields['value_7']->raw; ?> </br>
-                    Fax: <?php print $fields['value_2']->raw; ?></br>
                     <a href="mailto:<?php print $fields['mail']->raw; ?>" class="inspector-email"><?php print $fields['mail']->raw; ?></a></br>
                     <div class="website-link"><?php if(!empty($fields['value_9']->raw)) print '<a href="' . $fields['value_9']->raw .'" target="_blank" class="btn website-btn">Company Website</a>';?></div>
+                    <?php
+                        if($is_admin){
+                            print '</br><div>'. $fields['edit_node']->content .'</div>';   
+                        }
+                    ?>
                 </p>
               </div>
             </div>

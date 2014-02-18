@@ -245,9 +245,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'db_cahpi2013',
-      'username' => 'cahpi2013',
-      'password' => 'zNs4%u72',
+      'database' => '',
+      'username' => '',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
